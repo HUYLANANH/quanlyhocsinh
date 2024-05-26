@@ -12,17 +12,17 @@
         <form asp-action="Edit">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
-                <label asp-for="Ngay" class="control-label"></label>
+                <label asp-for="Ngay" class="control-label">Ngày</label>
                 <input asp-for="Ngay" class="form-control" />
                 <span asp-validation-for="Ngay" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="LopId" class="control-label"></label>
+                <label asp-for="LopId" class="control-label">ID Lớp</label>
                 <select asp-for="LopId" class="form-control" asp-items="ViewBag.LopId"></select>
                 <span asp-validation-for="LopId" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Noidung" class="control-label"></label>
+                <label asp-for="Noidung" class="control-label">Nội dung</label>
                 <input asp-for="Noidung" class="form-control" />
                 <span asp-validation-for="Noidung" class="text-danger"></span>
             </div>
@@ -35,6 +35,6 @@
 </div>
 
 <div>
-    <a asp-action="Index">Back to List</a>
+    <a class="btn btn-primary" asp-action="Index">Quay lại</a>
 </div>
 

@@ -13,33 +13,33 @@
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <input type="hidden" asp-for="DiemDanhId" />
             <div class="form-group">
-                <label asp-for="LopId" class="control-label"></label>
+                <label asp-for="LopId" class="control-label">Mã Lớp</label>
                 <select asp-for="LopId" class="form-control" asp-items="ViewBag.LopId"></select>
                 <span asp-validation-for="LopId" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Ngay" class="control-label"></label>
+                <label asp-for="Ngay" class="control-label">Ngày</label>
                 <input asp-for="Ngay" class="form-control" />
                 <span asp-validation-for="Ngay" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="HsId" class="control-label"></label>
+                <label asp-for="HsId" class="control-label">Mã học sinh</label>
                 <select asp-for="HsId" class="form-control" asp-items="ViewBag.HsId"></select>
                 <span asp-validation-for="HsId" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="TrangThai" class="control-label"></label>
+                <label asp-for="TrangThai" class="control-label">Trạng thái</label>
                 <input asp-for="TrangThai" class="form-control" />
                 <span asp-validation-for="TrangThai" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary" />
+                <input type="submit" value="Lưu" class="btn btn-primary" />
             </div>
         </form>
     </div>
 </div>
 
 <div>
-    <a asp-action="Index">Back to List</a>
+    <a class="btn btn-primary" asp-action="Index">Quay lại</a>
 </div>
 

@@ -53,7 +53,7 @@ namespace QLY_HOCSINH.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("HsId,HoTen")] HocSinh hocSinh)
+        public async Task<IActionResult> Create([Bind("HsId,HoTen,Sdt,Diachi,Gioitinh")] HocSinh hocSinh)
         {
             if (ModelState.IsValid)
             {
@@ -85,7 +85,7 @@ namespace QLY_HOCSINH.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(string id, [Bind("HsId,HoTen")] HocSinh hocSinh)
+        public async Task<IActionResult> Edit(string id, [Bind("HsId,HoTen,Sdt,Diachi,Gioitinh")] HocSinh hocSinh)
         {
             if (id != hocSinh.HsId)
             {
