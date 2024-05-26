@@ -1,14 +1,13 @@
 ﻿@model IEnumerable<QLY_HOCSINH.Models.DiemDanh>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Điểm danh";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h1>Danh sách điểm danh</h1>
 
 <p>
-    <a class="btn btn-primary" asp-action="Create">Thêm điểm danh </a>
+    <a class = "btn btn-primary" asp-action="Create">Thêm mới</a>
 </p>
 <table class="table">
     <thead>
@@ -43,11 +42,11 @@
             <td>
                 @Html.DisplayFor(modelItem => item.Lop.LopId)
             </td>
-            <td>
+                <td>
                     <a class="btn btn-primary" asp-action="Edit" asp-route-id="@item.DiemDanhId">Chỉnh sửa</a> |
                     <a class="btn btn-primary" asp-action="Details" asp-route-id="@item.DiemDanhId">Chi tiết</a> |
                     <a class="btn btn-danger" asp-action="Delete" asp-route-id="@item.DiemDanhId">Xóa</a>
-            </td>
+                </td>
         </tr>
 }
     </tbody>

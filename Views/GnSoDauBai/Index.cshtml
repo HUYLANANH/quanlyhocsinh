@@ -1,14 +1,12 @@
 ﻿@model IEnumerable<QLY_HOCSINH.Models.GnSoDauBai>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Ghi nhận đầu bài";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h1>Danh sách sổ đầu bài</h1>
-
 <p>
-    <a class="btn btn-primary" asp-action="Create">Ghi nhận thêm</a>
+    <a class="btn btn-primary" asp-action="Create">Thêm mới</a>
 </p>
 <table class="table">
     <thead>
@@ -17,7 +15,16 @@
                 @Html.DisplayNameFor(model => model.Ngay)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Noidung)
+                @Html.DisplayNameFor(model => model.Tiet)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TenBai)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NoiDung)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.XepLoai)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Lop)
@@ -32,16 +39,26 @@
                 @Html.DisplayFor(modelItem => item.Ngay)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Noidung)
+                @Html.DisplayFor(modelItem => item.Tiet)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TenBai)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NoiDung)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.XepLoai)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Lop.LopId)
             </td>
-            <td>
+
+                <td>
                     <a class="btn btn-primary" asp-action="Edit" asp-route-id="@item.GnId">Chỉnh sửa</a> |
                     <a class="btn btn-primary" asp-action="Details" asp-route-id="@item.GnId">Chi tiết</a> |
                     <a class="btn btn-danger" asp-action="Delete" asp-route-id="@item.GnId">Xóa</a>
-            </td>
+                </td>
         </tr>
 }
     </tbody>

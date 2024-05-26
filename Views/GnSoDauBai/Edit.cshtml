@@ -1,0 +1,56 @@
+﻿@model QLY_HOCSINH.Models.GnSoDauBai
+
+@{
+    ViewData["Title"] = "Sửa";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<h4>Chỉnh sửa sổ đầu bài</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="GnId" />
+            <div class="form-group">
+                <label asp-for="Ngay" class="control-label"></label>
+                <input asp-for="Ngay" class="form-control" />
+                <span asp-validation-for="Ngay" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Tiet" class="control-label"></label>
+                <input asp-for="Tiet" class="form-control" />
+                <span asp-validation-for="Tiet" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="LopId" class="control-label"></label>
+                <select asp-for="LopId" class="form-control" asp-items="ViewBag.LopId"></select>
+                <span asp-validation-for="LopId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TenBai" class="control-label"></label>
+                <input asp-for="TenBai" class="form-control" />
+                <span asp-validation-for="TenBai" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NoiDung" class="control-label"></label>
+                <input asp-for="NoiDung" class="form-control" />
+                <span asp-validation-for="NoiDung" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="XepLoai" class="control-label"></label>
+                <input asp-for="XepLoai" class="form-control" />
+                <span asp-validation-for="XepLoai" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Lưu" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a class="btn btn-primary" asp-action="Index">Quay lại</a>
+</div>
+

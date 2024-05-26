@@ -6,7 +6,7 @@ namespace QLY_HOCSINH.Models;
 
 public partial class DiemDanh
 {
-    [Display(Name = "Mã điểm danh")]
+
     public int DiemDanhId { get; set; }
 
     [Display(Name = "Mã lớp")]

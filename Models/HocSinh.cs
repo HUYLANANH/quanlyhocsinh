@@ -15,7 +15,7 @@ public partial class HocSinh
     [Display(Name = "Số điện thoại")]
     public int? Sdt { get; set; }
 
-    [Display(Name = "Địa chỉ")]
+    [Display(Name = "Đại chỉ")]
     public string? Diachi { get; set; }
 
     [Display(Name = "Giới tính")]

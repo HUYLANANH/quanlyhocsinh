@@ -1,11 +1,11 @@
 ﻿@model QLY_HOCSINH.Models.DiemDanh
 
 @{
-    ViewData["Title"] = "Edit";
+    ViewData["Title"] = "Sửa";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h4>Chỉnh sửa điểm danh</h4>
+<h4>Sửa điểm danh</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
@@ -13,22 +13,22 @@
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <input type="hidden" asp-for="DiemDanhId" />
             <div class="form-group">
-                <label asp-for="LopId" class="control-label">Mã Lớp</label>
+                <label asp-for="LopId" class="control-label"></label>
                 <select asp-for="LopId" class="form-control" asp-items="ViewBag.LopId"></select>
                 <span asp-validation-for="LopId" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Ngay" class="control-label">Ngày</label>
+                <label asp-for="Ngay" class="control-label"></label>
                 <input asp-for="Ngay" class="form-control" />
                 <span asp-validation-for="Ngay" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="HsId" class="control-label">Mã học sinh</label>
+                <label asp-for="HsId" class="control-label"></label>
                 <select asp-for="HsId" class="form-control" asp-items="ViewBag.HsId"></select>
                 <span asp-validation-for="HsId" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="TrangThai" class="control-label">Trạng thái</label>
+                <label asp-for="TrangThai" class="control-label"></label>
                 <input asp-for="TrangThai" class="form-control" />
                 <span asp-validation-for="TrangThai" class="text-danger"></span>
             </div>

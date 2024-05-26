@@ -12,7 +12,7 @@ public partial class GiaoVien
     [Display(Name = "Họ tên")]
     public string? HoTen { get; set; }
 
-    [Display(Name = "Tài khoản")]
+    [Display(Name = "Tài khoản ")]
     public string? TaiKhoan { get; set; }
 
     [Display(Name = "Mật khẩu")]

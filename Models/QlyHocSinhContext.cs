@@ -100,9 +100,18 @@ public partial class QlyHocSinhContext : DbContext
                 .IsUnicode(false)
                 .HasColumnName("LOP_ID");
             entity.Property(e => e.Ngay).HasColumnName("NGAY");
-            entity.Property(e => e.Noidung)
+            entity.Property(e => e.NoiDung)
                 .HasMaxLength(250)
-                .HasColumnName("NOIDUNG");
+                .HasColumnName("NOI_DUNG");
+            entity.Property(e => e.TenBai)
+                .HasMaxLength(50)
+                .HasColumnName("TEN_BAI");
+            entity.Property(e => e.Tiet)
+                .HasMaxLength(50)
+                .HasColumnName("TIET");
+            entity.Property(e => e.XepLoai)
+                .HasMaxLength(50)
+                .HasColumnName("XEP_LOAI");
 
             entity.HasOne(d => d.Lop).WithMany(p => p.GnSoDauBais)
                 .HasForeignKey(d => d.LopId)
