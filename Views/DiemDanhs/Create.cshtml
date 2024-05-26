@@ -17,7 +17,7 @@
             </div>
             <div class="form-group">
                 <label asp-for="Ngay" class="control-label">Ngày</label>
-                <input asp-for="Ngay" class="form-control" />
+                <input asp-for="Ngay" class="form-control" value="@DateTime.Now.ToString("yyyy-MM-dd")" />
                 <span asp-validation-for="Ngay" class="text-danger"></span>
             </div>
             <div class="form-group">
